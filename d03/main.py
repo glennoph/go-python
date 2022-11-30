@@ -11,10 +11,8 @@ while True:
             todo = input('enter a todo: ')
             todos.append(todo) # add todo to list
         case 'show':
-            i =1
-            for item in todos:
-                print(i,item.capitalize())
-                i = i+1
+            for i, item in enumerate(todos):
+                print(i+1,item.capitalize())
 
         case 'edit':
             item = input('enter item number: ')
